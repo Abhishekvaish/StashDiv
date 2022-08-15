@@ -1,0 +1,32 @@
+{
+	"name": "stashdiv",
+	"version": "1.0",
+	"description": "remove any element from a webpage",
+
+	"icons": {
+		"128": "icons/icon.png"
+	},
+
+	"action": {
+		"default_popup": "popup/popup.html"
+	},
+	"background": {
+		"service_worker": "background.js"
+	},
+
+	"content_scripts": [
+		{
+			"js": ["content/script.js"],
+			"matches": ["<all_urls>"]
+		}
+	],
+
+	"web_accessible_resources": [
+		{
+			"resources": [""],
+			"matches": ["<all_urls>"]
+		}
+	],
+	"permissions": ["storage", "activeTab"],
+	"manifest_version": 3
+}

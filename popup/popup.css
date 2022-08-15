@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: white;
+	width: 250px;
+}
+.hero {
+	background-color: wheat;
+	padding: 10px 15px;
+}
+h3 {
+	/* margin-bottom: 10px; */
+	font-size: 1.4rem;
+}
+.help-text {
+	margin: 5px 0;
+	color: gray;
+	visibility: hidden;
+}
+.container {
+	padding: 10px 15px;
+}
+.list-div {
+	max-height: 220px;
+	overflow-y: auto;
+}
+.list-div::-webkit-scrollbar {
+	width: 2vw;
+	background-color: wheat;
+}
+.list-div::-webkit-scrollbar-thumb {
+	background-color: #fa6400;
+}
+
+.list-div div {
+	background-color: #ffffff;
+	border: 1px solid #b89c9c;
+	border-radius: 8px;
+	box-sizing: border-box;
+	color: #222222;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	margin-top: 5px;
+	outline: none;
+	padding: 5px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	overflow-x: hidden;
+	touch-action: manipulation;
+	transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s, transform 0.1s;
+	user-select: none;
+	-webkit-user-select: none;
+	width: 95%;
+}
+.list-div div:hover {
+	border: 1px solid #c85000;
+}
+.list-div div:focus-visible {
+	box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+	transition: box-shadow 0.2s;
+}
+
+.list-div div:active {
+	background-color: #f7f7f7;
+	border-color: #000000;
+	transform: scale(0.96);
+}
+
+.list-div div:disabled {
+	border-color: #dddddd;
+	color: #dddddd;
+	cursor: not-allowed;
+	opacity: 1;
+}
+
+/* CSS */
+#hide-div {
+	align-items: center;
+	background-clip: padding-box;
+	background-color: #fa6400;
+	border: 1px solid transparent;
+	border-radius: 0.25rem;
+	box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	display: inline-flex;
+	font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	justify-content: center;
+	line-height: 1.25;
+	margin: 0;
+	min-height: 3rem;
+	padding: calc(0.575rem - 1px) calc(1.5rem - 1px);
+	position: relative;
+	text-decoration: none;
+	transition: all 250ms;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: baseline;
+	width: 100%;
+}
+
+#hide-div:hover,
+#hide-div:focus {
+	background-color: #fb8332;
+	box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+#hide-div:hover {
+	transform: translateY(-1px);
+}
+
+#hide-div:active {
+	background-color: #c85000;
+	box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+	transform: translateY(0);
+}
