@@ -4,6 +4,8 @@
 
 **A browser extension to remove any div/element from a webpage**
 
+
+*Please wait for the demo video to load :)*
 <img src="demo.gif">
 
 ### How it works
